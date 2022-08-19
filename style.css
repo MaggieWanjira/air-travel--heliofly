@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Poppins:wght@200;300;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.case{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 2;
+}
+
+.case.active{
+    right: 300px;
+
+}
+.menutoggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(menu.jpg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menutoggle.active{
+    background: url('close1.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+.case video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.text{
+    z-index: 10;
+}
+
+
+/* .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    mix-blend-mode: overlay;
+} */
+
+.text h2{
+    font-size: 4em;
+    font-weight: 600; 
+}
+.text h3{
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.text p{
+    font-size: 1em;
+    margin: 20px 0;
+}
+.text a{
+    text-decoration: none;
+    background-color: 	#630330;
+    color: white;
+    letter-spacing: 0.1em;
+    padding: 10px 23px;
+    margin-top: 15px;
+    transition: ease-in-out 0.5s;
+} 
+.text a:hover{
+    letter-spacing:0.5em ;
+}  
+
+.social{
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li{
+    list-style: none;
+}
+.social li a{
+    display: inline-block;
+    margin-right: 5px;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.social li a:hover{
+    transform: scale(1.5) translateY(-20px);
+}
+
+.logo{
+    text-transform: uppercase;
+}
+
+
+.social img{
+    max-width: 100px;
+    max-height: 80px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* width is the same size as*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+
+}
+
+.menu ul li a:hover{
+    color: purple;
+    cursor: pointer;
+}
+/*media queries for different screen sizes*/
+@media (max-width: 991px) {
+    .case, .case header{
+        padding: 40px;
+    }
+    .text h2{
+        font-size: 2em;
+    }
+    .text h3{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6883fd4c8.js" crossorigin="anonymous"></script>
+    <title>Cloud 9 landing page</title>
+</head>
+<body>
+   <section class="case">
+    <header>
+       
+        
+        <h2 class="logo">heliofly</h2>
+        <div class="menutoggle"></div>
+    </header>
+
+    <video src="cloudy.mp4" muted autoplay loop></video>
+    <!-- <div class="overlay"></div> Used this to add colour on the background video -->
+
+    <div class="text">
+        <h2>The Sky is the limit</h2>
+        <h3>Explore the world</h3>
+        <p>Looking for the most exciting, inspiring and rewarding career in the world? The sky is calling you!</p>
+
+        <a href="#">EXPLORE</a>
+    </div>
+
+    <ul class="social">
+        <li><a href="https://www.instagram.com/accounts/login/"><img src="instagram.png" alt=""></a></li>
+        <li><a href="https://twitter.com/i/flow/login"><img src="twitter.png" alt=""></a></li>
+
+    </ul>
+   </section> 
+
+   <div class="menu">
+    <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About heliofly</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+   </div>
+
+   <script>
+
+        const menutoggle = document.querySelector('.menutoggle')
+        const showcase = document.querySelector('.case')
+
+        menuToggle.addEventListener('click', () => {
+            menutoggle.classList.menutoggle('active')
+            showcase.classList.menutoggle('active')
+        })
+
+   </script>
+</body>
+</html>
